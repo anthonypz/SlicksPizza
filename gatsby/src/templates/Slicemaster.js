@@ -1,10 +1,9 @@
-import { graphql } from 'gatsby';
-import React from 'react';
-import Img from 'gatsby-image';
-import SEO from '../components/SEO';
+import { graphql } from "gatsby";
+import React from "react";
+import Img from "gatsby-image";
+import SEO from "../components/SEO";
 
 export default function SlicemasterPage({ data: { person } }) {
-  console.log(person);
   return (
     <>
       <SEO title={person.name} image={person.image.asset.src} />
